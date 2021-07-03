@@ -10,7 +10,7 @@ public class AppControl : MonoBehaviour
     {
         questionImage.sprite = Resources.Load<Sprite>("VocabImages/DOG");
 
-        // test
+        // testsd
 
     }
 
