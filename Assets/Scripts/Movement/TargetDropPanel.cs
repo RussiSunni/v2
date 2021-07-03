@@ -7,14 +7,16 @@ using UnityEngine.EventSystems;
 public class TargetDropPanel : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public static DraggableBlock d;
+    int answerLetterCount;
 
     void Start()
     {
+        answerLetterCount = 3;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        //fdgdfgdfgsdsdsdssdsdsdsd
+
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -35,8 +37,40 @@ public class TargetDropPanel : MonoBehaviour, IDropHandler, IPointerEnterHandler
     IEnumerator FindChildBlock()
     {
         yield return new WaitForSeconds(0.1f);
-        Debug.Log(transform.childCount);
-        if (transform.childCount > 0)
-            Debug.Log(gameObject.transform.GetChild(0).gameObject.name);
+
+
+        if (gameObject.name == "Target01")
+        {
+            if (gameObject.transform.GetChild(0).gameObject.name == "D")
+            {
+                AppControl.answerCounter++;
+            }
+        }
+
+        else if (gameObject.name == "Target02")
+        {
+            if (gameObject.transform.GetChild(0).gameObject.name == "O")
+            {
+                AppControl.answerCounter++;
+            }
+        }
+
+        else if (gameObject.name == "Target03")
+        {
+            if (gameObject.transform.GetChild(0).gameObject.name == "G")
+            {
+                AppControl.answerCounter++;
+            }
+        }
+
+
+        if (AppControl.answerCounter == 3)
+            Debug.Log(AppControl.answerCounter);
+
+
+
+
+
+        // Debug.Log(gameObject.transform.GetChild(0).gameObject.name);
     }
 }

@@ -6,11 +6,10 @@ public class AppControl : MonoBehaviour
 {
     public Image questionImage;
     public static List<DictionaryLookup> dictionaryLookupsList = new List<DictionaryLookup>();
+    public static int answerCounter = 0;
     void Start()
     {
         questionImage.sprite = Resources.Load<Sprite>("VocabImages/DOG");
-
-        // testsd
 
     }
 
