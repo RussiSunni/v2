@@ -9,9 +9,11 @@ public class TargetDropPanel : MonoBehaviour, IDropHandler, IPointerEnterHandler
     public static DraggableBlock d;
     int answerLetterCount;
 
+
     void Start()
     {
         answerLetterCount = 3;
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -37,7 +39,6 @@ public class TargetDropPanel : MonoBehaviour, IDropHandler, IPointerEnterHandler
     IEnumerator FindChildBlock()
     {
         yield return new WaitForSeconds(0.1f);
-
 
         if (gameObject.name == "Target01")
         {
@@ -65,11 +66,12 @@ public class TargetDropPanel : MonoBehaviour, IDropHandler, IPointerEnterHandler
 
 
         if (AppControl.answerCounter == 3)
-            Debug.Log(AppControl.answerCounter);
+        {
+            var appControlScript = GameObject.Find("AppControl").GetComponent<AppControl>();
+            appControlScript.NextQuestion();
 
 
-
-
+        }
 
         // Debug.Log(gameObject.transform.GetChild(0).gameObject.name);
     }
