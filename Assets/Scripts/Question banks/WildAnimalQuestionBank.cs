@@ -44,7 +44,7 @@ public class WildAnimalQuestionBank : Question
             'A',
             'R'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -64,7 +64,7 @@ public class WildAnimalQuestionBank : Question
             'L',
             'F'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -85,7 +85,7 @@ public class WildAnimalQuestionBank : Question
             'R',
             'A'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -104,7 +104,7 @@ public class WildAnimalQuestionBank : Question
             'W',
             'L'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -126,7 +126,7 @@ public class WildAnimalQuestionBank : Question
             'E',
             'Y'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -141,12 +141,14 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Parrot"),
             answerBlocks = new List<char>()
         {
-            'monkey',
-            'parrot',
-            'owl',
-            'zebra'
+            'P',
+            'A',
+            'R',
+            'R',
+            'O',
+            'T'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -161,12 +163,15 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Giraffe"),
             answerBlocks = new List<char>()
         {
-            'giraffe',
-            'parrot',
-            'owl',
-            'zebra'
+            'G',
+            'I',
+            'R',
+            'A',
+            'F',
+            'F',
+            'E'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -181,12 +186,12 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Lion"),
             answerBlocks = new List<char>()
         {
-            'giraffe',
-            'parrot',
-            'lion',
-            'zebra'
+            'L',
+            'I',
+            'O',
+            'N'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -201,12 +206,17 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Crocodile"),
             answerBlocks = new List<char>()
         {
-            'crocodile',
-            'parrot',
-            'lion',
-            'zebra'
+            'C',
+            'R',
+            'O',
+            'C',
+            'O',
+            'D',
+            'I',
+            'L',
+            'E'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -223,12 +233,14 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Rabbit"),
             answerBlocks = new List<char>()
         {
-            'rabbit',
-            'parrot',
-            'pig',
-            'donkey'
+            'R',
+            'A',
+            'B',
+            'B',
+            'I',
+            'T'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -243,12 +255,12 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Frog"),
             answerBlocks = new List<char>()
         {
-            'rabbit',
-            'parrot',
-            'pig',
-            'frog'
+            'F',
+            'R',
+            'O',
+            'G'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -263,12 +275,13 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Tiger"),
             answerBlocks = new List<char>()
         {
-            'tiger',
-            'parrot',
-            'pig',
-            'frog'
+            'T',
+            'I',
+            'G',
+            'E',
+            'R'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -284,12 +297,16 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Elephant"),
             answerBlocks = new List<char>()
         {
-            'tiger',
-            'elephant',
-            'goat',
-            'chicken'
+            'E',
+            'L',
+            'E',
+            'P',
+            'H',
+            'A',
+            'N',
+            'T'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -304,12 +321,14 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Lizard"),
             answerBlocks = new List<char>()
         {
-            'tiger',
-            'elephant',
-            'goat',
-            'lizard'
+            'L',
+            'I',
+            'Z',
+            'A',
+            'R',
+            'D'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -324,12 +343,11 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Bat"),
             answerBlocks = new List<char>()
         {
-            'tiger',
-            'elephant',
-            'bat',
-            'lizard'
+            'B',
+            'A',
+            'T'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -344,12 +362,13 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Eagle"),
             answerBlocks = new List<char>()
         {
-            'tiger',
-            'elephant',
-            'bat',
-            'eagle'
+            'E',
+            'A',
+            'G',
+            'L',
+            'E'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -364,12 +383,16 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Kangaroo"),
             answerBlocks = new List<char>()
         {
-            'kangaroo',
-            'elephant',
-            'bat',
-            'eagle'
+            'K',
+            'A',
+            'N',
+            'G',
+            'A',
+            'R',
+            'O',
+            'O'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -384,12 +407,13 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Panda"),
             answerBlocks = new List<char>()
         {
-            'kangaroo',
-            'panda',
-            'bat',
-            'eagle'
+            'P',
+            'A',
+            'N',
+            'D',
+            'A'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -404,12 +428,15 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Penguin"),
             answerBlocks = new List<char>()
         {
-            'kangaroo',
-            'panda',
-            'bat',
-            'penguin'
+            'P',
+            'E',
+            'N',
+            'G',
+            'U',
+            'I',
+            'N'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -426,12 +453,13 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Snake"),
             answerBlocks = new List<char>()
         {
-            'kangaroo',
-            'panda',
-            'snake',
-            'penguin'
+            'S',
+            'N',
+            'A',
+            'K',
+            'E'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -446,12 +474,12 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Swan"),
             answerBlocks = new List<char>()
         {
-            'kangaroo',
-            'panda',
-            'swan',
-            'sheep'
+            'S',
+            'W',
+            'A',
+            'N'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -466,12 +494,16 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Tortoise"),
             answerBlocks = new List<char>()
         {
-            'tortoise',
-            'panda',
-            'swan',
-            'sheep'
+            'T',
+            'O',
+            'R',
+            'T',
+            'O',
+            'I',
+            'S',
+            'E'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -486,12 +518,13 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Shark"),
             answerBlocks = new List<char>()
         {
-            'shark',
-            'panda',
-            'swan',
-            'sheep'
+            'S',
+            'H',
+            'A',
+            'R',
+            'K'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },
@@ -506,12 +539,15 @@ public class WildAnimalQuestionBank : Question
             sprite = Resources.Load<Sprite>("Questions/Animals/Dolphin"),
             answerBlocks = new List<char>()
         {
-            'shark',
-            'panda',
-            'swan',
-            'dolphin'
+            'D',
+            'O',
+            'L',
+            'P',
+            'H',
+            'I',
+            'N'
         },
-            tags = new List<char>()
+            tags = new List<string>()
         {
             "animals"
         },

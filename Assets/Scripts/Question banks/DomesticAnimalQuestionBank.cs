@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class DomesticAnimalQuestionBank : Question
 {
-    public static List<Question> questions = new List<Question>();
-    public static Question animalName001 = new Question();
-    public static Question animalName002 = new Question();
-    public static Question animalName003 = new Question();
-    public static Question animalName013 = new Question();
-    public static Question animalName014 = new Question();
-    public static Question animalName015 = new Question();
-    public static Question animalName016 = new Question();
-    public static Question animalName020 = new Question();
-    public static Question animalName021 = new Question();
-    public static Question animalName029 = new Question();
-    public static Question animalName035 = new Question();
+    public static List<Question> domesticAnimalNameQuestions = new List<Question>();
+    public static Question domesticAnimalName001 = new Question();
+    public static Question domesticAnimalName002 = new Question();
+    public static Question domesticAnimalName003 = new Question();
+    public static Question domesticAnimalName004 = new Question();
+    public static Question domesticAnimalName005 = new Question();
+    public static Question domesticAnimalName006 = new Question();
+    public static Question domesticAnimalName007 = new Question();
+    public static Question domesticAnimalName008 = new Question();
+    public static Question domesticAnimalName009 = new Question();
+    public static Question domesticAnimalName010 = new Question();
+    public static Question domesticAnimalName011 = new Question();
 
     void Start()
     {
-        animalName001 = new Question()
+
+        domesticAnimalName001 = new Question()
         {
             number = 1,
             questionName = "cat",
@@ -38,11 +39,11 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Cat"
         };
 
-        animalName002 = new Question()
+        domesticAnimalName002 = new Question()
         {
             number = 2,
             questionName = "dog",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Dog"),
+            sprite = Resources.Load<Sprite>("VocabImages/DOG"),
             answerBlocks = new List<char>()
         {
             'D',
@@ -57,7 +58,7 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Dog"
         };
 
-        animalName003 = new Question()
+        domesticAnimalName003 = new Question()
         {
             number = 3,
             questionName = "horse",
@@ -77,7 +78,8 @@ public class DomesticAnimalQuestionBank : Question
             size = 1,
             answerSound = "Horse"
         };
-        animalName013 = new Question()
+
+        domesticAnimalName004 = new Question()
         {
             number = 13,
             questionName = "cow",
@@ -96,7 +98,7 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Cow"
         };
 
-        animalName014 = new Question()
+        domesticAnimalName005 = new Question()
         {
             number = 14,
             questionName = "duck",
@@ -116,7 +118,7 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Duck"
         };
 
-        animalName015 = new Question()
+        domesticAnimalName006 = new Question()
         {
             number = 15,
             questionName = "pig",
@@ -135,7 +137,7 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Pig"
         };
 
-        animalName016 = new Question()
+        domesticAnimalName007 = new Question()
         {
             number = 16,
             questionName = "donkey",
@@ -157,7 +159,7 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Donkey"
         };
 
-        animalName020 = new Question()
+        domesticAnimalName008 = new Question()
         {
             number = 20,
             questionName = "goat",
@@ -177,7 +179,7 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Goat"
         };
 
-        animalName021 = new Question()
+        domesticAnimalName009 = new Question()
         {
             number = 21,
             questionName = "chicken",
@@ -201,7 +203,7 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Chicken"
         };
 
-        animalName029 = new Question()
+        domesticAnimalName010 = new Question()
         {
             number = 29,
             questionName = "sheep",
@@ -222,7 +224,7 @@ public class DomesticAnimalQuestionBank : Question
             answerSound = "Sheep"
         };
 
-        animalName035 = new Question()
+        domesticAnimalName011 = new Question()
         {
             number = 35,
             questionName = "mouse",
@@ -247,41 +249,38 @@ public class DomesticAnimalQuestionBank : Question
     public static void LoadQuestionList()
     {
         // if (GameControl.animalName001known == false)
-        questions.Add(animalName001);
+        domesticAnimalNameQuestions.Add(domesticAnimalName001);
 
         // if (!GameControl.animalName002known)
-        questions.Add(animalName002);
+        domesticAnimalNameQuestions.Add(domesticAnimalName002);
 
         // if (!GameControl.animalName003known)
-        questions.Add(animalName003);
+        domesticAnimalNameQuestions.Add(domesticAnimalName003);
 
         // if (!GameControl.animalName013known)
-        questions.Add(animalName013);
+        domesticAnimalNameQuestions.Add(domesticAnimalName004);
 
         // if (!GameControl.animalName014known)
-        questions.Add(animalName014);
+        domesticAnimalNameQuestions.Add(domesticAnimalName005);
 
         // if (!GameControl.animalName015known)
-        questions.Add(animalName015);
+        domesticAnimalNameQuestions.Add(domesticAnimalName006);
 
         // if (!GameControl.animalName016known)
-        questions.Add(animalName016);
+        domesticAnimalNameQuestions.Add(domesticAnimalName007);
 
         // if (!GameControl.animalName020known)
-        questions.Add(animalName020);
+        domesticAnimalNameQuestions.Add(domesticAnimalName008);
 
         // if (!GameControl.animalName021known)
-        questions.Add(animalName021);
-
+        domesticAnimalNameQuestions.Add(domesticAnimalName009);
 
         // if (!GameControl.animalName029known)
-        questions.Add(animalName029);
+        domesticAnimalNameQuestions.Add(domesticAnimalName010);
 
         // if (!GameControl.animalName035known)
-        questions.Add(animalName035);
+        domesticAnimalNameQuestions.Add(domesticAnimalName011);
 
         //questions = questions.OrderBy(x => System.Guid.NewGuid()).ToList();
     }
-
-
 }
