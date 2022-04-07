@@ -1,0 +1,4 @@
+repository "UnityApp2PSCTest@ecomap@cloud"
+  path "/"
+    br "/main"
+    co "/main"

@@ -11,10 +11,12 @@ public class Question : MonoBehaviour
     public List<string> answerList = new List<string>();
     public Sprite sprite;
     public List<char> answerBlocks = new List<char>();
-    //public List<Sprite> answerOptionsSprites = new List<Sprite>();
+    public List<string> answerOptions = new List<string>();
+    public List<Sprite> answerOptionsSprites = new List<Sprite>();
     public List<string> tags = new List<string>();
     public int size;
     public bool answered;
     public bool known;
     public string answerSound;
+    public int level;
 }

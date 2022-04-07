@@ -15,19 +15,18 @@ public class AppControl : MonoBehaviour
 
     void Start()
     {
-        // questionImage.sprite = Resources.Load<Sprite>("VocabImages/DOG");
+        questionImage.sprite = Resources.Load<Sprite>("VocabImages/DOG");
 
-        DomesticAnimalQuestionBank.LoadQuestionList();
+        // use V4 question bank
 
-        questionImage.sprite = DomesticAnimalQuestionBank.domesticAnimalNameQuestions[1].sprite;
+
+
+        // questionImage.sprite = DomesticAnimalQuestionBank.domesticAnimalNameQuestions[1].sprite;
     }
 
 
     public void NextQuestion()
     {
-
-
-
         D.SetParent(DParent);
         O.SetParent(OParent);
         G.SetParent(GParent);
